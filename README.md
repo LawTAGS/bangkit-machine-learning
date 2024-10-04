@@ -1,9 +1,20 @@
-Cara menjalankan dashboard:
-1. Buka directory yang berisi dashboard.py
-2. Install libraries yang diperlukan seperti matplotlib, seaborn, numpy, pandas, dan streamlit
-3. Buka terminal dan masukkan perintah "streamlit run dashboard.py"
+## Setup Environment - Anaconda
+```
+conda create --name main-ds python=3.9
+conda activate main-ds
+pip install numpy pandas matplotlib seaborn jupyter streamlit
+```
 
-atau
+## Setup Environment - Shell/Terminal
+```
+mkdir proyek-analisis-data
+cd proyek-analisis-data
+pipenv install
+pipenv shell
+pip install -r requirements.txt
+```
 
-Dashboard dapat juga langsung diakses melalui tautan berikut:
-https://bangkit-machine-learning-by-bryan-guok.streamlit.app/
+## Run Streamlit App
+```
+streamlit run dashboard.py
+```
